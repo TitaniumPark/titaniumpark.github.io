@@ -3,24 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RAHASIA</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Rahasia</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f7f7f7;
+      }
+      button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: #ff4081;
+        color: white;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      button:hover {
+        background-color: #ff79a6;
+      }
+    </style>
   </head>
   <body>
-    <div class="container">
-      <div class="balloons">
-        <div class="balloon"></div>
-        <div class="balloon"></div>
-        <div class="balloon"></div>
-        <div class="balloon"></div>
-        <div class="balloon"></div>
-      </div>
-      <div class="message">
-        <h1>SAYANGGGGGGGGG!</h1>
-        <p>COBA PENCETTT!</p>
-        <button id="celebrateButton">PICIK</button>
-      </div>
-    </div>
-    <script src="script.js"></script>
+    <button id="celebrateButton">PICIK!</button>
+    <script>
+      document
+        .getElementById("celebrateButton")
+        .addEventListener("click", function () {
+          window.location.href = "celebrate.html";
+        });
+    </script>
   </body>
 </html>
